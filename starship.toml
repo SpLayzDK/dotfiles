@@ -5,7 +5,7 @@ add_newline = true
 
 # Change the default prompt format
 format = """\
-[╭╴](238)$env_var\
+[╭╴](238)$env_var$os \
 $all[╰─](238)$character"""
 
 # Change the default prompt characters
@@ -56,6 +56,19 @@ modified = " "
 staged = '[++\($count\)](green)'
 renamed = "襁 "
 deleted = " "
+
+
+[os]
+format = "[$symbol]($style)"
+style = "bold blue"
+disabled = false
+
+[os.symbols]
+Windows = ""
+Debian = ""
+Ubuntu = ""
+Android = ""
+Unknown = "?"
 
 
 [python]
