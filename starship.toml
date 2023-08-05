@@ -79,6 +79,11 @@ version_format = "v${major}.${minor}"
 symbol = ""
 
 
+[golang]
+format = "via [${symbol} ${version} ]($style)"
+symbol = ""
+
+
 [nodejs]
 format = "via [󰎙 $version](bold green) "
 
