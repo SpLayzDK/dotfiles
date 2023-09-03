@@ -1,7 +1,5 @@
 # ~/.config/starship.toml
 
-# FONT USED :: JetBrainsMono Nerd Font Mono
-
 # Inserts a blank line between shell prompts
 add_newline = true
 
@@ -79,11 +77,6 @@ version_format = "v${major}.${minor}"
 symbol = ""
 
 
-[golang]
-format = "via [${symbol} ${version} ]($style)"
-symbol = ""
-
-
 [nodejs]
 format = "via [󰎙 $version](bold green) "
 
@@ -92,3 +85,8 @@ format = "via [󰎙 $version](bold green) "
 format = "via [${symbol} ${version} ]($style)"
 symbol = ""
 style = "red"
+
+[golang]
+format = 'via [${symbol} $version]($style) '
+symbol = ""
+style = "cyan"
